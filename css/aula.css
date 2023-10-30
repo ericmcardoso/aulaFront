@@ -1,0 +1,30 @@
+.um{
+	width: 20%;
+	height: 15vh;
+	background-color: red;
+}
+
+.dois{
+	width: 50%;
+	height: 15vh;
+	background-color: blue;
+}
+
+.tres{
+	width: 80%;
+	height: 15vh;
+	background-color: green;
+}
+
+@media (max-width: 760px){
+	.um{
+		width: 100%;
+	}
+	.dois{
+		display: none;
+	}
+	.tres{
+		height: 30vh;
+		background-color: yellow;
+	}
+}
