@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+
+
+	display: flex; /*transforma uma div em container*/
+	flex-direction: row;/*define a direção dos filhos*/
+	flex-wrap: wrap;/*permite ou não a quebra de linha*/
+}
+
+.p1{
+	width: 15%;
+	height: 20vh;
+	background-color: darkgreen;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p1 img{
+	height: 70%;
+}
+
+.p2{
+	width: 85%;
+	height: 20vh;
+	background-color: darkgreen;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.p2 input{
+	width: 25%;
+	height: 5vh;
+	margin-top: 3vh;
+	margin-right: 3vh;
+	border: 0;
+	border-radius: .7vh;
+}
+
+
+.p3{
+	width: 100%;
+	height: 25vh;
+	background-color: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p3 img{
+	height: 90%;
+	max-width: 80%;
+}
+.p4{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.p4 h1{
+	color: darkblue;
+	font-family: Arial;
+	
+	text-align: center;
+	width: 90%;
+	
+
+}
+
+.p4 img{
+	width: 90%;
+	height: 70%;
+	margin-top: 2vh;
+	margin-bottom: 1vh;
+}
+
+
+.p5{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.p5 img{
+	width: 90%;
+	margin-top: 2vh;
+	margin-bottom: 1vh;
+}
+
+.p6{
+	width: 100%;
+	height: 20vh;
+	background-color: darkgreen;
+}
+
+input::placeholder {
+  color: darkgreen;
+  padding-left: 1vh;
+}
+
+@media (max-width:760px){
+	.p1, .p4, .p5{
+		width: 100%;
+	}
+
+	.p2, .p3{
+		display: none;
+	}
+}
